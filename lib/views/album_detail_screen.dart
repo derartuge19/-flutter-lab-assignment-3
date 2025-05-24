@@ -191,4 +191,14 @@ class AlbumDetailScreen extends StatelessWidget {
                 ),
               ],
             );
-          }
+          }return Center(
+            child: Text(
+              'Album not found',
+              style: TextStyle(color: Colors.white70),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
