@@ -20,55 +20,48 @@ class MyApp extends StatelessWidget {
         title: 'Album Gallery',
         routerConfig: router,
         theme: ThemeData(
-          primaryColor: Color(0xFF00C853), // Vibrant green
+          primaryColor: Color(0xFFF57C00), // Vibrant orange
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Color(0xFF00C853),
-            primary: Color(0xFF00C853),
-            secondary: Color(0xFF00BFA5),
+            seedColor: Color(0xFFF57C00),
+            primary: Color(0xFFF57C00),
+            secondary: Color(0xFF4A148C),
             background: Color(0xFF121212),
             brightness: Brightness.dark,
           ),
           textTheme: TextTheme(
             titleLarge: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.w700,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
               color: Colors.white,
-              letterSpacing: 0.5,
               shadows: [
                 Shadow(
-                  offset: Offset(1.5, 1.5),
-                  blurRadius: 4,
-                  color: Colors.black.withOpacity(0.4),
+                  offset: Offset(1, 1),
+                  blurRadius: 2,
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ],
             ),
             bodyLarge: TextStyle(
               fontSize: 16,
-              color: Color(0xFFBDBDBD),
-              height: 1.5,
+              color: Colors.white70,
             ),
           ),
           cardTheme: CardTheme(
-            color: Color(0xFF1E1E1E),
+            color: Color(0xFF282828),
             elevation: 8,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(24),
+              borderRadius: BorderRadius.circular(16),
             ),
-            shadowColor: Colors.black.withOpacity(0.3),
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF00C853),
-              foregroundColor: Colors.black,
+              backgroundColor: Color(0xFFF57C00),
+              foregroundColor: Colors.white,
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
-              shadowColor: Colors.green.withOpacity(0.3),
-              textStyle: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-              ),
+              shadowColor: Colors.orange.withOpacity(0.3),
             ),
           ),
           appBarTheme: AppBarTheme(
@@ -76,15 +69,14 @@ class MyApp extends StatelessWidget {
             foregroundColor: Colors.white,
             elevation: 0,
             titleTextStyle: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w800,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
               color: Colors.white,
-              letterSpacing: 1,
               shadows: [
                 Shadow(
-                  offset: Offset(2, 2),
-                  blurRadius: 4,
-                  color: Colors.black.withOpacity(0.4),
+                  offset: Offset(1, 1),
+                  blurRadius: 2,
+                  color: Colors.black.withOpacity(0.3),
                 ),
               ],
             ),
